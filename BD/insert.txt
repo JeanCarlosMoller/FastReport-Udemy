@@ -83,3 +83,15 @@ insert into pedido_detalhe (id_pedido, id_produto) values (7, 7);
 insert into pedido_detalhe (id_pedido, id_produto) values (8, 8);
 insert into pedido_detalhe (id_pedido, id_produto) values (9, 9);
 insert into pedido_detalhe (id_pedido, id_produto) values (10, 10);
+
+-- Empresa
+insert into empresa (id, empresa, cnpj, id_endereco, logo_tipo) values (1, 'Gilbertina', '32.323.423/4235-41', 1, NULL);
+insert into empresa (id, empresa, cnpj, id_endereco, logo_tipo) values (2, 'Leon', '32.323.423/4235-42', 2, NULL);
+insert into empresa (id, empresa, cnpj, id_endereco, logo_tipo) values (3, 'Rice', '32.323.423/4235-43', 3, NULL);
+insert into empresa (id, empresa, cnpj, id_endereco, logo_tipo) values (4, 'Briny', '32.323.423/4235-44', 4, NULL);
+insert into empresa (id, empresa, cnpj, id_endereco, logo_tipo) values (5, 'Alyss', '32.323.423/4235-45', 5, NULL);
+insert into empresa (id, empresa, cnpj, id_endereco, logo_tipo) values (6, 'Bernardine', '32.323.423/4235-46', 6, NULL);
+insert into empresa (id, empresa, cnpj, id_endereco, logo_tipo) values (7, 'Suzanne', '32.323.423/4235-47', 7, NULL);
+insert into empresa (id, empresa, cnpj, id_endereco, logo_tipo) values (8, 'Emmit', '32.323.423/4235-48', 8, NULL);
+insert into empresa (id, empresa, cnpj, id_endereco, logo_tipo) values (9, 'Ruthanne', '32.323.423/4235-49', 9, NULL);
+insert into empresa (id, empresa, cnpj, id_endereco, logo_tipo) values (10, 'Tomi', '32.323.423/4235-10', 10, NULL);

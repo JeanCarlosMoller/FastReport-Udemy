@@ -9,11 +9,13 @@ object DataModule1: TDataModule1
       'Password=root'
       'Server=localhost'
       'DriverID=MySQL')
+    Connected = True
+    LoginPrompt = False
     Left = 141
     Top = 56
   end
   object FDPhysMySQLDriverLink1: TFDPhysMySQLDriverLink
-    VendorLib = 'C:\GIT\Curso-Udemy-FastReport\Biblioteca\libmysql.dll'
+    VendorLib = 'C:\GIT\FastReport-Udemy\Biblioteca\libmysql.dll'
     Left = 141
     Top = 120
   end
