@@ -5,9 +5,9 @@
 
 ## 🛠️ Tecnologias
 Delphi;
-##
+
 FastReport;
-#
+
 ## PDF dos Relatórios.
 
 [Pedido.pdf](https://github.com/JeanCarlosMoller/FastReport-Udemy/files/10420470/Pedido.pdf)
