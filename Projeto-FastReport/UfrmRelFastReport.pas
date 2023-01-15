@@ -15,7 +15,7 @@ uses
   FireDAC.DApt.Intf, FireDAC.DApt,
   FireDAC.Comp.DataSet, UdmFastReport, frxDBSet, Vcl.Menus, frxExportBaseDialog,
   frxExportPDF,
-  frxExportXLSX, frxExportXLS;
+  frxExportXLSX, frxExportXLS, Vcl.Imaging.pngimage, Vcl.ExtCtrls;
 
 type
   TfrmPrincipal = class(TForm)
@@ -36,6 +36,8 @@ type
     QryItens: TFDQuery;
     frxDSPItens: TfrxDBDataset;
     Pedido1: TMenuItem;
+    Panel1: TPanel;
+    Image1: TImage;
     procedure Estado1Click(Sender: TObject);
     procedure Sair1Click(Sender: TObject);
     procedure FormClose(Sender: TObject; var Action: TCloseAction);

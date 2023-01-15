@@ -1,0 +1,56 @@
+-- MySQL dump 10.13  Distrib 8.0.19, for Win64 (x86_64)
+--
+-- Host: localhost    Database: fastreportudemy
+-- ------------------------------------------------------
+-- Server version	5.7.29-log
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!50503 SET NAMES utf8 */;
+/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+/*!40103 SET TIME_ZONE='+00:00' */;
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+--
+-- Table structure for table `cliente`
+--
+
+DROP TABLE IF EXISTS `cliente`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `cliente` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `nome` varchar(100) NOT NULL,
+  `cpf` varchar(45) NOT NULL,
+  `telefone` varchar(50) DEFAULT NULL,
+  `celular` varchar(50) DEFAULT NULL,
+  `id_endereco` int(11) NOT NULL,
+  PRIMARY KEY (`id`),
+  CONSTRAINT `id_cliente_endereco` FOREIGN KEY (`id`) REFERENCES `endereco` (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `cliente`
+--
+
+LOCK TABLES `cliente` WRITE;
+/*!40000 ALTER TABLE `cliente` DISABLE KEYS */;
+INSERT INTO `cliente` VALUES (1,'Etta','111.222.333-41','(47)3333-3331','(47)9 9999-9991',1),(2,'Orelee','111.222.333-42','(47)3333-3332','(47)9 9999-9992',2),(3,'Garreth','111.222.333-43','(47)3333-3333','(47)9 9999-9993',3),(4,'Bili','111.222.333-44','(47)3333-3334','(47)9 9999-9994',4),(5,'Raviv','111.222.333-45','(47)3333-3335','(47)9 9999-9995',5),(6,'Deanne','111.222.333-46','(47)3333-3336','(47)9 9999-9996',6),(7,'Mervin','111.222.333-47','(47)3333-3337','(47)9 9999-9997',7),(8,'Clea','111.222.333-48','(47)3333-3338','(47)9 9999-9998',8),(9,'Norton','111.222.333-49','(47)3333-3339','(47)9 9999-9999',9),(10,'Francisco','111.222.333-10','(47)3333-3310','(47)9 9999-9910',10);
+/*!40000 ALTER TABLE `cliente` ENABLE KEYS */;
+UNLOCK TABLES;
+/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+
+-- Dump completed on 2023-01-15 12:03:35

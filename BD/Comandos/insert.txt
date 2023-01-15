@@ -1,0 +1,97 @@
+-- Estado
+insert into estado (id, estado) values (1, 'Santa Catarina');
+insert into estado (id, estado) values (2, 'Rio Grande do Sul');
+insert into estado (id, estado) values (3, 'São Paulo');
+insert into estado (id, estado) values (4, 'Goiás');
+insert into estado (id, estado) values (5, 'Ceará');
+insert into estado (id, estado) values (6, 'Mato Grosso');
+insert into estado (id, estado) values (7, 'Bahia');
+insert into estado (id, estado) values (8, 'Minas Gerais');
+insert into estado (id, estado) values (9, 'Paraná');
+insert into estado (id, estado) values (10, 'Amazonas');
+
+-- Cidade
+insert into cidade (id, cidade, id_estado) values (1, 'Blumenau', 1);
+insert into cidade (id, cidade, id_estado) values (2, 'Porto Alegre', 2);
+insert into cidade (id, cidade, id_estado) values (3, 'Campinas', 3);
+insert into cidade (id, cidade, id_estado) values (4, 'Trindade', 4);
+insert into cidade (id, cidade, id_estado) values (5, 'Fortaleza', 5);
+insert into cidade (id, cidade, id_estado) values (6, 'Juína', 6);
+insert into cidade (id, cidade, id_estado) values (7, 'Salvador', 7);
+insert into cidade (id, cidade, id_estado) values (8, 'Belo Horizonte', 8);
+insert into cidade (id, cidade, id_estado) values (9, 'Londrina', 9);
+insert into cidade (id, cidade, id_estado) values (10, 'Anamã', 10);
+
+-- Endereco
+insert into endereco (id, endereco, complemento, bairro, quadra, lote, numero, id_cidade) values (1, 'Suite 63', 'Carmelita Airport', 'Ankazoabo Airport', 1, 1, 1, 1);
+insert into endereco (id, endereco, complemento, bairro, quadra, lote, numero, id_cidade) values (2, 'Apt 1946', 'Boundji Airport', 'London Biggin Hill Airport', 2, 2, 2, 2);
+insert into endereco (id, endereco, complemento, bairro, quadra, lote, numero, id_cidade) values (3, 'Room 233', 'Lakefield Airport', 'El Arrayán Airport', 3, 3, 3, 3);
+insert into endereco (id, endereco, complemento, bairro, quadra, lote, numero, id_cidade) values (4, 'Suite 71', 'El Charco Airport', 'Camiguin Airport', 4, 4, 4, 4);
+insert into endereco (id, endereco, complemento, bairro, quadra, lote, numero, id_cidade) values (5, 'Room 8', 'Steamboat Bay Seaplane Base', 'Lawrenceville Vincennes International Airport', 5, 5, 5, 5);
+insert into endereco (id, endereco, complemento, bairro, quadra, lote, numero, id_cidade) values (6, 'Suite 24', 'Kerema Airport', 'Silver Plains Airport', 6, 6, 6, 6);
+insert into endereco (id, endereco, complemento, bairro, quadra, lote, numero, id_cidade) values (7, 'Apt 1870', 'Mutiara Airport', 'Tokyo Haneda International Airport', 7, 7, 7, 7);
+insert into endereco (id, endereco, complemento, bairro, quadra, lote, numero, id_cidade) values (8, 'Suite 13', 'Kerteh Airport', 'Angel Fire Airport', 8, 8, 8, 8);
+insert into endereco (id, endereco, complemento, bairro, quadra, lote, numero, id_cidade) values (9, 'Apt 760', 'Sibiu International Airport', 'Faranah Airport', 9, 9, 9, 9);
+insert into endereco (id, endereco, complemento, bairro, quadra, lote, numero, id_cidade) values (10, 'PO Box 97606', 'Maastricht Aachen Airport', 'Norfolk Naval Station (Chambers Field)', 10, 10, 10, 10);
+
+
+-- Cliente
+insert into cliente (id, nome, cpf, telefone, celular, id_endereco) values (1, 'Etta', '111.222.333-41', '(47)3333-3331', '(47)9 9999-9991', 1);
+insert into cliente (id, nome, cpf, telefone, celular, id_endereco) values (2, 'Orelee', '111.222.333-42', '(47)3333-3332', '(47)9 9999-9992', 2);
+insert into cliente (id, nome, cpf, telefone, celular, id_endereco) values (3, 'Garreth', '111.222.333-43', '(47)3333-3333', '(47)9 9999-9993', 3);
+insert into cliente (id, nome, cpf, telefone, celular, id_endereco) values (4, 'Bili', '111.222.333-44', '(47)3333-3334', '(47)9 9999-9994', 4);
+insert into cliente (id, nome, cpf, telefone, celular, id_endereco) values (5, 'Raviv', '111.222.333-45', '(47)3333-3335', '(47)9 9999-9995', 5);
+insert into cliente (id, nome, cpf, telefone, celular, id_endereco) values (6, 'Deanne', '111.222.333-46', '(47)3333-3336', '(47)9 9999-9996', 6);
+insert into cliente (id, nome, cpf, telefone, celular, id_endereco) values (7, 'Mervin', '111.222.333-47', '(47)3333-3337', '(47)9 9999-9997', 7);
+insert into cliente (id, nome, cpf, telefone, celular, id_endereco) values (8, 'Clea', '111.222.333-48', '(47)3333-3338', '(47)9 9999-9998', 8);
+insert into cliente (id, nome, cpf, telefone, celular, id_endereco) values (9, 'Norton', '111.222.333-49', '(47)3333-3339', '(47)9 9999-9999', 9);
+insert into cliente (id, nome, cpf, telefone, celular, id_endereco) values (10, 'Francisco', '111.222.333-10', '(47)3333-3310', '(47)9 9999-9910', 10);
+
+
+-- Pedido
+insert into pedido (id, id_cliente, id_produto) values (1, 1, 1);
+insert into pedido (id, id_cliente, id_produto) values (2, 2, 2);
+insert into pedido (id, id_cliente, id_produto) values (3, 3, 3);
+insert into pedido (id, id_cliente, id_produto) values (4, 4, 4);
+insert into pedido (id, id_cliente, id_produto) values (5, 5, 5);
+insert into pedido (id, id_cliente, id_produto) values (6, 6, 6);
+insert into pedido (id, id_cliente, id_produto) values (7, 7, 7);
+insert into pedido (id, id_cliente, id_produto) values (8, 8, 8);
+insert into pedido (id, id_cliente, id_produto) values (9, 9, 9);
+insert into pedido (id, id_cliente, id_produto) values (10, 10, 10); 
+
+-- Produto
+insert into produto (id, produto, unidade, valor_unitario) values (1, 'Versatainer Nc - 8288', '70', '2.32');
+insert into produto (id, produto, unidade, valor_unitario) values (2, 'Salmon - Atlantic, No Skin', '3210', '3.37');
+insert into produto (id, produto, unidade, valor_unitario) values (3, 'Compound - Rum', '41', '7.53');
+insert into produto (id, produto, unidade, valor_unitario) values (4, 'Aspic - Clear', '093', '2.21');
+insert into produto (id, produto, unidade, valor_unitario) values (5, 'Turkey - Oven Roast Breast', '91802', '2.45');
+insert into produto (id, produto, unidade, valor_unitario) values (6, 'Beans - Turtle, Black, Dry', '2', '8.24');
+insert into produto (id, produto, unidade, valor_unitario) values (7, 'Soup - Campbells, Beef Barley', '0', '7.93');
+insert into produto (id, produto, unidade, valor_unitario) values (8, 'Bread - Dark Rye', '5671', '7.93');
+insert into produto (id, produto, unidade, valor_unitario) values (9, 'Extract - Vanilla,artificial', '74', '9.93');
+insert into produto (id, produto, unidade, valor_unitario) values (10, 'Banana - Leaves', '52272', '0.23');
+
+-- Pedido Detalhe
+insert into pedido_detalhe (id_pedido, id_produto) values (1, 1);
+insert into pedido_detalhe (id_pedido, id_produto) values (2, 2);
+insert into pedido_detalhe (id_pedido, id_produto) values (3, 3);
+insert into pedido_detalhe (id_pedido, id_produto) values (4, 4);
+insert into pedido_detalhe (id_pedido, id_produto) values (5, 5);
+insert into pedido_detalhe (id_pedido, id_produto) values (6, 6);
+insert into pedido_detalhe (id_pedido, id_produto) values (7, 7);
+insert into pedido_detalhe (id_pedido, id_produto) values (8, 8);
+insert into pedido_detalhe (id_pedido, id_produto) values (9, 9);
+insert into pedido_detalhe (id_pedido, id_produto) values (10, 10);
+
+-- Empresa
+insert into empresa (id, empresa, cnpj, id_endereco, logo_tipo) values (1, 'Gilbertina', '32.323.423/4235-41', 1, NULL);
+insert into empresa (id, empresa, cnpj, id_endereco, logo_tipo) values (2, 'Leon', '32.323.423/4235-42', 2, NULL);
+insert into empresa (id, empresa, cnpj, id_endereco, logo_tipo) values (3, 'Rice', '32.323.423/4235-43', 3, NULL);
+insert into empresa (id, empresa, cnpj, id_endereco, logo_tipo) values (4, 'Briny', '32.323.423/4235-44', 4, NULL);
+insert into empresa (id, empresa, cnpj, id_endereco, logo_tipo) values (5, 'Alyss', '32.323.423/4235-45', 5, NULL);
+insert into empresa (id, empresa, cnpj, id_endereco, logo_tipo) values (6, 'Bernardine', '32.323.423/4235-46', 6, NULL);
+insert into empresa (id, empresa, cnpj, id_endereco, logo_tipo) values (7, 'Suzanne', '32.323.423/4235-47', 7, NULL);
+insert into empresa (id, empresa, cnpj, id_endereco, logo_tipo) values (8, 'Emmit', '32.323.423/4235-48', 8, NULL);
+insert into empresa (id, empresa, cnpj, id_endereco, logo_tipo) values (9, 'Ruthanne', '32.323.423/4235-49', 9, NULL);
+insert into empresa (id, empresa, cnpj, id_endereco, logo_tipo) values (10, 'Tomi', '32.323.423/4235-10', 10, NULL);
